@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1a1a1a;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Experience */
+.experience h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.job .company,
+.job .subtitle {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.job .dates {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Contact page */
+.contact-page h1 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.contact-item a {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+.contact-item a:hover {
+    color: #555;
+}
+
+/* Traitors page */
+.traitors-page h1 {
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 45%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 3rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .experience h2 {
+        font-size: 1.75rem;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%;
+    }
+}
