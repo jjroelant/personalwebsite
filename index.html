@@ -10,7 +10,7 @@
     <nav>
         <a href="index.html" class="nav-name">JJ Roelant</a>
         <div class="nav-links">
-            <a href="contact.html">Contact</a>
+            <a href="#contact">Contact</a>
             <a href="traitors.html">Traitors</a>
         </div>
     </nav>
@@ -46,6 +46,32 @@
                 <img src="laptop.jpg" alt="Laptop on desk">
             </div>
         </div>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group-label">Name</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name <span class="required">(required)</span></label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name <span class="required">(required)</span></label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">(required)</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span class="required">(required)</span></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </section>
     </main>
 
     <footer>
